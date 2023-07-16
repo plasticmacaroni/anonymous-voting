@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anonymous Voting</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+    <meta name = “theme-color” content = “#FFF”>
+</head>
+<body>
+    <div id="background"></div>
+    <!-- <h1>Anonymous Voting</h1> -->
+    <form id="itemForm">
+        <input type="text" id="newItem" placeholder="Input a new item...">
+        <button type="submit">Add Item</button>
+    </form>
+
+    <div id="votingDiv" style="display: none;"></div>
+
+    <div id="manageForm">
+        <button onclick="tallyVotes()">Tally Votes</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
